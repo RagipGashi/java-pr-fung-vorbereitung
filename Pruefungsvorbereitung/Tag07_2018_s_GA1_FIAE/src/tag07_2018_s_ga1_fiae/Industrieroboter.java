@@ -9,8 +9,8 @@ public class Industrieroboter extends Werkzeug {
     private final int maxAnzWekzeug = 10;
     Werkzeug werkzeugKasten[] = new Werkzeug[10];
 
-    public Industrieroboter(String art, int verschleiss) {
-        super(art, verschleiss);
+    public Industrieroboter() {
+        super();
     }
 
     public boolean werkzeugHizufuegen(int platz, Werkzeug neu) {
