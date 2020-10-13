@@ -7,19 +7,19 @@ package s2017;
 public class Test_IBAN {
 
     public static void main(String[] args) {
-        int pz = berechnePruefziffer(21050170, 12345678);
-        System.out.println("21050170" + "-" + pz);
+        int pruefZiffer = berechnePruefziffer(21050170, 12345678);
+        System.out.println("21050170 - " + pruefZiffer);
 
-        float roundedFloat = printRounded((float) 23.152);
-        System.out.println("Print method: " + roundedFloat);
+//        float roundedFloat = printRounded((float) 23.152);
+//        System.out.println("Print method: " + roundedFloat);
     }
 
     static int berechnePruefziffer(long blz, long ktNr) {
         while (blz >= 97) {
             blz -= 97;
         }
-        ktNr *= 1000000;
-        ktNr += 131400;
+        ktNr = ktNr * 1000000;
+        ktNr = ktNr + 131400;
         while (ktNr >= 88529281) {
             ktNr -= 88529281;
         }
