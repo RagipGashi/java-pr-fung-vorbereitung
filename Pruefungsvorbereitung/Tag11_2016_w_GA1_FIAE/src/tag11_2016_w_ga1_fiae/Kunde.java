@@ -46,5 +46,5 @@ public class Kunde {
 
     public String getOrt() {
         return ort;
-    }   
+    }       
 }
